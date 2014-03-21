@@ -1,0 +1,145 @@
+*{
+    margin: 0px; padding: 0px;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+li {
+    margin-top: 10px;
+}
+
+@font-face{
+    font-family: TinyPixy; src: url(/client/resources/TinyPixy.ttf)
+}
+
+body {
+    font-family: 'Open Sans';
+    color: #4d4e53;
+}
+
+header {
+    overflow: hidden;
+    background-color: #eaeff2;
+    margin-bottom: 20px;
+    font-family: TinyPixy;
+}
+
+label {
+    display: inline-block;
+    width: 3em;
+    margin: 0.5em 0.5em 0.5em 0px;
+    font-family: TinyPixy;
+}
+
+a {
+    text-decoration: none;
+    color: #0095dd;
+    font-family: 'Open Sans';
+}
+
+header a{
+    color: #4d4e53;
+}
+
+.center {
+    margin: 0px auto;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.input-wrapper {
+    width: 30em;
+    margin: 3px auto;
+}
+
+.input-line {
+    width: 6em;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 11px;
+    margin-left: 15px;
+    background-color: #eaeff2;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px #bbbfc2;
+    -moz-box-shadow: inset 0 -1px #bbbfc2;
+    -ms-box-shadow: inset 0 -1px #bbbfc2;
+    box-shadow: inset 0 -1px #bbbfc2;
+    font-family: TinyPixy;
+}
+
+li .button {
+    margin: 0px;
+}
+
+#logo{
+    margin:10px 0px 0px 50px;
+}
+
+.warning {
+    color: red;
+}
+
+.note {
+    color: #0095dd;
+}
+
+.displayNone {
+    display: none;
+}
+
+.readyPlayer:after {
+    content:" ready!";
+}
+
+.dead {
+    color: red;
+}
+
+#stat1 {
+}
+
+#stat2 {
+    margin: 20px;
+    display: none;
+    overflow: hidden;
+}
+
+#author{
+    margin:0px 15px 10px 0px;
+    font-size: 0.5em;
+}
+
+#roomId-input-box {
+    display: none;
+}
+
+#bg {
+}
+
+#player-list {
+    background-color: #f4f7f8;
+    margin-left: 930px;
+    padding: 10px;
+}
+
+#players {
+    color: #0095dd;
+}
+#go {
+    display: none;
+}
+#bg-background{
+    font-size: 0;
+    border: 3px solid #0095dd;
+    background-image: url(/client/resources/image/bg.jpg)
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Battle</title>
+    <link rel="stylesheet" href="/client/styles/main.css" />
+</head>
+<body>
+
+    <div id="stat1">
+        <header>
+            <div id="logo">
+                <h1><span style="color:#0095dd">SNAKE</span> BATTLE</h1>
+            </div>
+            <div id="author" class="floatRight">
+                <a href="http://www.weibo.com/p/1005051701842233/home" target="_blank">@lyk一千个小时的征程</a>
+            </div>
+        </header>
+        <div class="input-wrapper center" id="name-input-box">
+            <label for="name" class="label">Name:</label>
+            <input type="text" id="name" class="input-line"/>
+            <span class="button" id="set-name">Set name</span>
+            <div id="name-warning"></div>
+        </div>
+        <div class="input-wrapper center" id="roomId-input-box">
+            <label for="roomId" class="label">RoomId:</label>
+            <input type="text" id="roomId" class="input-line"/>
+            <span class="button" id="creat">Creat a room</span>
+            <span class="button" id="join">join the room</span>
+            <div id="roomId-warning"></div>
+        </div>
+    </div>
+    <div id="stat2">
+        <div id="bg-background" class="floatLeft">
+            <canvas id="bg" width="900px" height="600px"></canvas>
+        </div>
+        <div id="player-list">
+            <div>Room: <span id= "room"></span></div>
+            Players:
+            <ul id="players">
+            </ul>
+            <ul id="room-option">
+                <li><span class="button" id="ready">ready</span></li>
+                <li><span class="button" id="exit">exit room</span></li>
+                <li><span class="button" id="go">go</span></li>
+            </ul>
+            <div id="roomInformation"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/client/scripts/zepto_min.js"></script>
+    <script type="text/javascript" src="/client/scripts/index.js"></script>
+</body>
+</html>
